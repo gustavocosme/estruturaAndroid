@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/scroll"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/black"
+                android:src="@drawable/ic_menu_home"
+                android:layout_width="88dp"
+                android:layout_height="88dp">
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_form_round"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <EditText
+                    android:textColor="#000"
+                    android:textColorHint="@color/cinza"
+                    android:id="@+id/txtEmail"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="22sp"
+                    android:textSize="18sp"
+                    android:background="@null"
+                    android:hint="* E-mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+               </EditText>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_form_round"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <EditText
+                    android:password="true"
+                    android:textColorHint="@color/cinza"
+                    android:id="@+id/txtSenha"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionSend"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="22sp"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:background="@null"
+                    android:hint="* Senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </EditText>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_rec_round_black"
+                android:textColor="@color/white"
+                android:id="@+id/btnLogin"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="233dp"
+                android:layout_height="56dp"
+                android:text="Entrar"
+                />
+
+            <Button
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_rec_round_black"
+                android:textColor="@color/white"
+                android:id="@+id/btnCadastro"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="233dp"
+                android:layout_height="56dp"
+                android:text="Cadastro"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>
